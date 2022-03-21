@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>
+</head>
+<body>
+    <script>
+        // add at the end of array.
+        document.write("push method", "<br>");
+        const arr_1 = [1, 2, 3];
+        document.write("arr_1 before = ", arr_1, "<br>");
+        arr_1.push(4);
+        document.write("arr_1 after = ", arr_1, "<br>");
+        document.write("<br>");
+
+        // add at the beginning of arra
+        document.write("unshift method", "<br>");
+        const arr_2 = [1, 2, 3];
+        document.write("arr_2 before = ", arr_2, "<br>");
+        arr_2.unshift(4, 5);
+        document.write("arr_2 after = ", arr_2, "<br>");
+        document.write("<br>");
+
+        // override array.
+        document.write("override method", "<br>");
+        const arr_3 = [1, 2, 3];
+        document.write("arr_3 before = ", arr_3, "<br>");
+        arr_3[0] = 4;
+        document.write("arr_3 after 1 = ", arr_3, "<br>");
+        document.write("<br>");
+        
+        // add or remove items of array.
+        document.write("slice method with removing", "<br>");
+        const arr_4 = [1, 2, 3, 4];
+        document.write("arr_4 before = ", arr_4, "<br>");
+        arr_4.splice(1, // start index
+                     2); // # items to delete
+        document.write("arr_4 after = ", arr_4, "<br>");
+        document.write("<br>");
+
+        document.write("slice method with adding bunch of items", "<br>");
+        const arr_5 = [1, 2, 3, 4];
+        document.write("arr_5 before = ", arr_5, "<br>");
+        arr_5.splice(2, // start index
+                     0, // # items to delete, 0 mean no delete
+                     5, 6, 7); // items to add
+        document.write("arr_5 after = ", arr_5, "<br>");
+        document.write("<br>");
+
+        document.write("slice method with adding bunch of items", "<br>");
+        const arr_6 = [1, 2, 3, 4];
+        document.write("arr_6 before = ", arr_6, "<br>");
+        arr_6.splice(2, // start index
+                     1, // # items to delete
+                     5, 6, 7); // items to add
+        document.write("arr_6 after = ", arr_6, "<br>");
+    </script>
+</body>
+</html>

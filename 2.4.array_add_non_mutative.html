@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>
+</head>
+<body>
+    <script>
+        // merge 2 array
+        document.write("concat method", "<br>");
+        const arr_1 = [1, 2, 3, 4];
+        const arr_2 = [5, 6, 7];
+        const arr_3 = arr_1.concat(arr_2);
+        document.write("arr_1 = ", arr_1, "<br>");
+        document.write("arr_2 = ", arr_2, "<br>");
+        document.write("arr_3 = ", arr_3, "<br>");
+        document.write("<br>");
+
+        // create or copy merge 2 array
+        document.write("spread", "<br>");
+        const arr_4 = [1, 2, 3, 4];
+        const arr_5 = [5, 6, 7];
+        const arr_6 = [8, 9, 10];
+        const arr_7 = [arr_4, arr_5, arr_6] // nested array (like matrix)
+        const arr_8 = [...arr_4, ...arr_5, ...arr_6];
+        document.write("arr_4 = ", arr_4, "<br>");
+        document.write("arr_5 = ", arr_5, "<br>");
+        document.write("arr_6 = ", arr_6, "<br>");
+        document.write("arr_7 = ", arr_7, "<br>");
+        document.write("arr_8 = ", arr_8, "<br>");
+        document.write("<br>");
+    </script>
+</body>
+</html>
