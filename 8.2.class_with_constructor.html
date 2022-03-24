@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>  
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, age, score){
+                this.name = name;
+                this.age = age;
+                this.classification = score >= 5 ? "Good" : "Bad";
+            };
+            hello(){
+                return 'Hello, I am' + ' ' + this.name + ' ' + 'with age' + ' ' + this.age + ' ' 
+                       + 'and my classification is' + ' ' + this.classification;
+            };
+        };
+    
+
+        const person_1 = new Person(name = "Nhan", age = 22, score = 8);
+        const person_2 = new Person(name = "Nhu", age = 22, score = 4);
+        console.log(person_1.hello());
+        console.log(person_2.hello());
+    </script>
+</body>
+</html>

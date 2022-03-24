@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>
+    
+</head>
+<body>
+    <script>
+        // arrow function with single parameter
+        const square = x => x * x;
+        area = square(5);
+        console.log("area", area); 
+        
+        // arrow function with multiple parameters
+        const student_infomation = (student_name, id, grade) => [student_name, id, 
+                                                                 grade >=8 ? "good" 
+                                                                 : (grade < 8) & (grade >= 5) ? "average" 
+                                                                 : "bad"];
+        student_1 = student_infomation("Nhan", 1, 8);
+        student_2 = student_infomation("Nhu", 2, 5);
+        student_3 = student_infomation("Uyen", 3, 2);
+        console.log("student_1", student_1);
+        console.log("student_2", student_2);
+        console.log("student_3", student_3);
+
+    </script>
+</body>
+</html>

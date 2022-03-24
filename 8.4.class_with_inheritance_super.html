@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>  
+</head>
+<body>
+    <script>
+        class Person{
+            hello(){
+                return 'This is person';
+            };
+        };
+
+
+        class Programmer extends Person{
+            hello(){
+                return super.hello() + ' ' + 'and this is also a programmer';
+            };
+        };
+
+
+        prog_1 = new Programmer();
+        console.log(prog_1.hello());
+    </script>
+</body>
+</html>

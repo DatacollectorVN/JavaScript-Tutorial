@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Fundamental</title>
+    
+</head>
+<body>
+    <script>
+        // Initialize object
+        obj_1 = {};
+        // obj_2 = Object.create();
+        // obj_3 = new Object();
+        
+        // Function as constructor of object
+        function Car(brand, model) {
+            this.brand = brand
+            this.model = model
+        };
+        const mycar = new Car('Ford', 'Fiesta');
+        console.log(mycar.brand);
+        console.log(mycar.model);
+
+        // Object method
+        const car_1 = {
+            brand: 'Ford',
+            model: 'Fiesta',
+            goTo: function(destination) {
+                console.log(`Going to ${destination}`)
+            }
+        };
+
+        //MyCar = car;
+        car_1.goTo("VN");
+
+    </script>
+</body>
+</html>
